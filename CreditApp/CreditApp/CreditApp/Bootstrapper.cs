@@ -1,5 +1,7 @@
 ﻿using System;
+using CreditApp.Core.UWP.Services;
 using CreditApp.Core.ViewModels;
+using CreditApp.Infrastructure.Data;
 using Ninject;
 using Ninject.Parameters;
 
@@ -14,6 +16,7 @@ namespace CreditApp.Core.UWP
         {
             _kernel = new StandardKernel();
 
+            _kernel.Bind<ISqLiteConnection>().To<SqLiteConnection>().InSingletonScope();
             _kernel.Bind<HomeViewModel>().ToSelf().InSingletonScope();
         }
 
