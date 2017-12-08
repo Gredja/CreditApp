@@ -1,4 +1,4 @@
-﻿
+﻿using CreditApp.Core.UWP.Views;
 using Xamarin.Forms;
 
 namespace CreditApp.Core.UWP
@@ -9,7 +9,7 @@ namespace CreditApp.Core.UWP
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new HomeView());
         }
 
         protected override void OnStart()
