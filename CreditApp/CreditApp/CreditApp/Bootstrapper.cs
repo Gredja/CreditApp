@@ -1,4 +1,5 @@
-﻿using CreditApp.Core.ViewModels;
+﻿using System;
+using CreditApp.Core.ViewModels;
 using Ninject;
 using Ninject.Parameters;
 
@@ -31,6 +32,11 @@ namespace CreditApp.Core.UWP
         public T Create<T>(string propertyName1, object value1, string propertyName2, object value2)
         {
             return _kernel.Get<T>(new ConstructorArgument(propertyName1, value1), new ConstructorArgument(propertyName2, value2));
+        }
+
+        public Lazy<T> LazyResolve<T>()
+        {
+            return new Lazy<T>(Create<T>);
         }
 
         public void Initialize()
