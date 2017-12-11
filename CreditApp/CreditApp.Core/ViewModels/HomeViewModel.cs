@@ -1,15 +1,18 @@
 ﻿using CreditApp.Core.ViewModels.Base;
+using CreditApp.Domain.Services.Services.Interfaces;
 
 namespace CreditApp.Core.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
         private string _name;
+        private IDbService _dbService;
 
-
-        public HomeViewModel()
+        public HomeViewModel(IDbService dbService)
         {
-            // _databaseManager = databaseManager;
+            _dbService = dbService;
+
+            _dbService.ConfigureDb();
 
 
             Name = "AlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlexAlex";

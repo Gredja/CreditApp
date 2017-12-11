@@ -1,10 +1,10 @@
-﻿using SQLitePCL;
+﻿using SQLite.Net.Async;
 
 namespace CreditApp.Infrastructure.Data.Repositories
 {
     public abstract class RepositoryBase
     {
-        protected readonly SQLiteConnection Database;
+        protected readonly SQLiteAsyncConnection Database;
 
         protected RepositoryBase(ISqLiteConnection sqLiteConnection)
         {

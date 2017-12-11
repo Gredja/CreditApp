@@ -1,9 +1,9 @@
-﻿using SQLitePCL;
+﻿using SQLite.Net.Async;
 
 namespace CreditApp.Infrastructure.Data
 {
     public interface ISqLiteConnection
     {
-        SQLiteConnection Connection { get; }
+        SQLiteAsyncConnection Connection { get; }
     }
 }

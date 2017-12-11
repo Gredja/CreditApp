@@ -38,10 +38,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\SqLiteConnection.cs" />
     <Compile Include="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
@@ -82,6 +80,10 @@
     <ProjectReference Include="..\..\CreditApp.Core\CreditApp.Core.csproj">
       <Project>{77395ad5-fd08-41c9-9f3e-944be1fd3fb9}</Project>
       <Name>CreditApp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CreditApp.Domain.Services\CreditApp.Domain.Services.csproj">
+      <Project>{5585783c-6224-4cc6-b1d9-b848a2b63a53}</Project>
+      <Name>CreditApp.Domain.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\CreditApp.Infrastructure.Data\CreditApp.Infrastructure.Data.csproj">
       <Project>{943a7f85-6dbb-4c79-aff0-2df617c6e10e}</Project>

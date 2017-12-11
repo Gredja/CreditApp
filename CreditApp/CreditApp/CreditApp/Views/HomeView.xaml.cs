@@ -1,5 +1,4 @@
 ﻿using CreditApp.Core.ViewModels;
-using Ninject;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +11,7 @@ namespace CreditApp.Core.UWP.Views
         {
             InitializeComponent();
 
-            BindingContext = Bootstrapper.Instance.Create<HomeViewModel>();
+            BindingContext = CoreBootstrapper.Instance.Create<HomeViewModel>();
         }
     }
 }
