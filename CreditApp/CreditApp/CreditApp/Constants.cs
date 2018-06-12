@@ -2,6 +2,6 @@
 {
     public static class Constants
     {
-        public const string DbFileName = "CreditApp.db3";
+        public const string DbFileName = "db.sqlite";
     }
 }

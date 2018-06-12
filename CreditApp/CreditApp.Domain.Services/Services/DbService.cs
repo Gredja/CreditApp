@@ -14,7 +14,7 @@ namespace CreditApp.Domain.Services.Services
 
         public void ConfigureDb()
         {
-            _dbDatabaseRepository.CreateTables();
+            _dbDatabaseRepository.CreateDatabaseAsync();
         }
     }
 }

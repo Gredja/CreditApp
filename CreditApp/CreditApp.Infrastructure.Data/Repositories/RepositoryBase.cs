@@ -1,4 +1,5 @@
-﻿using SQLite.Net.Async;
+﻿using SQLite.Net;
+using SQLite.Net.Async;
 
 namespace CreditApp.Infrastructure.Data.Repositories
 {

@@ -1,10 +1,11 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.4",
-    "MvvmCross.Community.Plugin.Sqlite": "3.1.1",
     "Portable.Ninject": "3.3.1",
+    "Sqlite-Winrt": "3.8.7.1",
+    "SQLite.Net-PCL": "3.1.1",
     "SQLite.Net.Async-PCL": "3.1.1",
-    "SQLite.Net.Platform.WinRT": "2.5.1",
+    "System.Runtime.WindowsRuntime": "4.3.0",
     "Xamarin.Forms": "2.5.0.121934"
   },
   "frameworks": {
